@@ -12,3 +12,5 @@ class Books(models.Model):
     price=models.FloatField()
     qty=models.PositiveBigIntegerField(default=0)
     dop=models.DateField()
+    photo=models.ImageField(upload_to='images', null=True,default=None)
+    
